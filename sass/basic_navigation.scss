@@ -1,0 +1,67 @@
+nav{
+  position: fixed!important;
+  top: 0!important;
+  width: 99.9%;
+  padding-top: 0!important;
+  padding-left: 0!important;
+  padding-right: 0!important;
+  max-height: 80px;
+  background: $nav_bgcolor;
+  @include box-shadow();
+  .navbar-brand{
+    max-width: 200px;
+    height: auto;
+    img{
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+  .navbar-toggler{
+    background: $nav-togglerbtn--bgcolor;
+  }
+  #navbarNav{
+    .navbar-nav{
+      .active{
+        .nav-link{
+          color: $navbar_nav-item--activecolor;
+        }
+
+      }
+    }
+  }
+}
+@mixin nav-lg--below {
+  nav{
+    .brand_and_btn--wrapper{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      @include default-padding();
+      .navbar-toggler{
+        height: 40px;
+        width: 50px;
+      }
+    }
+    #navbarNav{
+      background: $nav_bgcolor;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100vw;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s;
+      @include default-padding();
+
+    }
+  }
+
+}
+#navbarNav.open-nav{
+  display: flex!important;
+  height: 100vh!important;
+  transition: height 1s;
+  overflow: auto;
+}

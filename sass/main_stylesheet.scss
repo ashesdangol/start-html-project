@@ -1,0 +1,23 @@
+:root{
+  font-size: 14px;
+}
+html,body{
+  min-height: 100vh;
+}
+body{
+  padding-top: 80px!important;
+}
+.hide-overflow{
+  overflow: hidden;
+}
+
+@mixin box-shadow(){
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+@mixin default-padding() {
+  padding-left: 14px!important;
+  padding-right: 14px!important;
+}
+@import "assets";
+@import "basic_navigation";
+@import "media_query";

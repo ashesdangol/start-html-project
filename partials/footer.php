@@ -7,7 +7,7 @@
 
   <script>if(typeof(Popper) === 'undefined' || typeof($.fn.modal) === 'undefined') {document.write('<script src="bs_js/bootstrap.bundle.min.js"><\/script>')}</script>
 
-  
+
   <!--If bootstrap cdn is unavialble use local boostrap css -->
   <div id="bootstrapCssTest" class="d-none"></div>
   <script>
@@ -18,7 +18,7 @@
       }
     });
   </script>
-
+  <script src="js/custom.js"></script>
 
 </body>
 </html>
