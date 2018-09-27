@@ -10,9 +10,9 @@ Error: Undefined variable: "$nav_bgcolor".
 9:   background: $nav_bgcolor;
 10:   @include box-shadow();
 11:   .navbar-brand{
-12:     max-width: 200px;
-13:     height: auto;
-14:     img{
+12:     width: 100%;
+13:     height: 100%;
+14:     max-width: 200px;
 
 Backtrace:
 sass/basic_navigation.scss:9
@@ -71,4 +71,4 @@ sass/basic_navigation.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$nav_bgcolor\".\A         on line 9 of sass/basic_navigation.scss\A \A 4:   width: 99.9%;\A 5:   padding-top: 0!important;\A 6:   padding-left: 0!important;\A 7:   padding-right: 0!important;\A 8:   max-height: 80px;\A 9:   background: $nav_bgcolor;\A 10:   @include box-shadow();\A 11:   .navbar-brand{\A 12:     max-width: 200px;\A 13:     height: auto;\A 14:     img{"; }
+  content: "Error: Undefined variable: \"$nav_bgcolor\".\A         on line 9 of sass/basic_navigation.scss\A \A 4:   width: 99.9%;\A 5:   padding-top: 0!important;\A 6:   padding-left: 0!important;\A 7:   padding-right: 0!important;\A 8:   max-height: 80px;\A 9:   background: $nav_bgcolor;\A 10:   @include box-shadow();\A 11:   .navbar-brand{\A 12:     width: 100%;\A 13:     height: 100%;\A 14:     max-width: 200px;"; }

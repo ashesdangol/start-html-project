@@ -9,6 +9,8 @@ nav{
   background: $nav_bgcolor;
   @include box-shadow();
   .navbar-brand{
+    width: 100%;
+    height: 100%;
     max-width: 200px;
     height: auto;
     img{
