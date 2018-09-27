@@ -10,6 +10,19 @@ body {
 .hide-overflow {
   overflow: hidden; }
 
+.hide-this {
+  position: fixed !important;
+  top: -90px !important;
+  transition: all 0.25s ease-in-out; }
+
+.show-this {
+  transition: all 0.25s ease-in-out;
+  position: fixed !important;
+  top: 0 !important; }
+
+.hide-padding {
+  padding-top: 0px !important; }
+
 nav {
   position: fixed !important;
   top: 0 !important;
