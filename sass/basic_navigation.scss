@@ -26,7 +26,45 @@ nav{
     }
   }
   .navbar-toggler{
+    border: none;
     background: $nav-togglerbtn--bgcolor;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none !important;
+
+    .icon-bar{
+      display: block;
+      background: $nav_icon_bar--bgcolor;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      height: 2px;
+      width: 22px;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    &.x{
+      .icon-bar:nth-of-type(1) {
+      	-webkit-transform: rotate(45deg);
+      	-ms-transform: rotate(45deg);
+      	transform: rotate(45deg);
+      	-webkit-transform-origin: 19% 10%;
+      	-ms-transform-origin: 19% 10%;
+      	transform-origin: 19% 10%;
+      }
+      .icon-bar:nth-of-type(2) {
+      	opacity: 0;
+      	filter: alpha(opacity=0);
+      }
+      .icon-bar:nth-of-type(3) {
+      	-webkit-transform: rotate(-45deg);
+      	-ms-transform: rotate(-45deg);
+      	transform: rotate(-45deg);
+      	-webkit-transform-origin: 10% 90%;
+      	-ms-transform-origin: 10% 90%;
+      	transform-origin: 10% 90%;
+      }
+    }
+
   }
   #navbarNav{
     .navbar-nav{
@@ -48,8 +86,8 @@ nav{
       align-items: center;
       @include default-padding();
       .navbar-toggler{
-        height: 40px;
-        width: 50px;
+        // height: 40px;
+        // width: 50px;
       }
     }
     #navbarNav{

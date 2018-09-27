@@ -5,7 +5,9 @@
         <img src="img/logo.svg" class="img-fluid" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" >
-        <span class="navbar-toggler-icon"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
     </div>
     <div class="" id="navbarNav">

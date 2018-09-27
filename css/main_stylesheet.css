@@ -35,7 +35,37 @@ nav {
       object-fit: contain;
       object-position: center; }
   nav .navbar-toggler {
-    background: white; }
+    border: none;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none !important; }
+    nav .navbar-toggler .icon-bar {
+      display: block;
+      background: black;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      height: 2px;
+      width: 22px;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    nav .navbar-toggler.x .icon-bar:nth-of-type(1) {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-transform-origin: 19% 10%;
+      -ms-transform-origin: 19% 10%;
+      transform-origin: 19% 10%; }
+    nav .navbar-toggler.x .icon-bar:nth-of-type(2) {
+      opacity: 0;
+      filter: alpha(opacity=0); }
+    nav .navbar-toggler.x .icon-bar:nth-of-type(3) {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-transform-origin: 10% 90%;
+      -ms-transform-origin: 10% 90%;
+      transform-origin: 10% 90%; }
   nav #navbarNav .navbar-nav .active .nav-link {
     color: red; }
 
@@ -53,9 +83,6 @@ nav {
     align-items: center;
     padding-left: 14px !important;
     padding-right: 14px !important; }
-    nav .brand_and_btn--wrapper .navbar-toggler {
-      height: 40px;
-      width: 50px; }
   nav #navbarNav {
     background: white;
     position: absolute;
