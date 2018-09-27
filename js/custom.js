@@ -10,8 +10,13 @@ $(document).ready(function(){
     $(this).addClass('active');
   });
 
-  $('#navbarNav').on('click','.nav-item', function(){
-    $( ".navbar-toggler" ).trigger( "click" );
+  $('nav').on('click','.nav-item', function(){
+    var ashes=$('.nav_main--wrapper').find('.open-nav');
+    // $( ".navbar-toggler" ).trigger( "click" );
+    // alert('hello');
+    if(ashes.length>0){
+      $( ".navbar-toggler" ).trigger( "click" );
+    }
   });
 
   window.addEventListener('resize', function () {
