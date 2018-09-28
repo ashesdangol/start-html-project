@@ -12,8 +12,6 @@ $(document).ready(function(){
 
   $('nav').on('click','.nav-item', function(){
     var ashes=$('.nav_main--wrapper').find('.open-nav');
-    // $( ".navbar-toggler" ).trigger( "click" );
-    // alert('hello');
     if(ashes.length>0){
       $( ".navbar-toggler" ).trigger( "click" );
     }
@@ -24,6 +22,7 @@ $(document).ready(function(){
     if(docSize>991){
       $('nav').find('#navbarNav').removeClass('open-nav');
       $('nav').find('.navbar-toggler').removeClass('x');
+      $('body').removeClass('hide-overflow');
     }
   });
   var lastScrollPosition=0;
