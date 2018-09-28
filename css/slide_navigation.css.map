@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,GAAG;EACD,MAAM,EAAE,aAAa",
+"sources": ["../sass/slide_navigation.scss"],
+"names": [],
+"file": "slide_navigation.css"
+}

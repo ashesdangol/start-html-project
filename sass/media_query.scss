@@ -4,7 +4,15 @@
 }
 
 @media only screen and (max-width: 991px){
+  //--------- basic_navigation
   @include nav-lg--below();
+  // -------------//
+
+  //--------- slide_navigation
+  // @include slide_navigation--lg-below();
+  // -------------//
+
+
 }
 
 

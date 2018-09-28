@@ -1,42 +1,35 @@
 /*
-Error: Undefined mixin 'nav-lg--below'.
-        on line 8 of sass/media_query.scss, in `nav-lg--below'
-        from line 8 of sass/media_query.scss
+Error: Undefined variable: "$nav_bgcolor".
+        on line 9 of sass/slide_navigation.scss
 
-3: 
-4: }
-5: 
-6: @media only screen and (max-width: 991px){
-7:   //--------- basic_navigation
-8:   @include nav-lg--below();
-9:   // -------------//
-10: 
-11:   //--------- slide_navigation
-12:   // @include slide_navigation--lg-below();
-13:   // -------------//
+4:   width: 99.9%;
+5:   padding-top: 0!important;
+6:   padding-left: 0!important;
+7:   padding-right: 0!important;
+8:   max-height: 100px;
+9:   background: $nav_bgcolor;
+10:   @include box-shadow();
+11:   .navbar-brand{
+12:     width: 100%;
+13:     height: 100%;
+14:     min-height: 60px;
 
 Backtrace:
-sass/media_query.scss:8:in `nav-lg--below'
-sass/media_query.scss:8
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+sass/slide_navigation.scss:9
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -78,4 +71,4 @@ sass/media_query.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'nav-lg--below'.\A         on line 8 of sass/media_query.scss, in `nav-lg--below'\A         from line 8 of sass/media_query.scss\A \A 3: \A 4: }\A 5: \A 6: @media only screen and (max-width: 991px){\A 7:   //--------- basic_navigation\A 8:   @include nav-lg--below();\A 9:   // -------------//\A 10: \A 11:   //--------- slide_navigation\A 12:   // @include slide_navigation--lg-below();\A 13:   // -------------//"; }
+  content: "Error: Undefined variable: \"$nav_bgcolor\".\A         on line 9 of sass/slide_navigation.scss\A \A 4:   width: 99.9%;\A 5:   padding-top: 0!important;\A 6:   padding-left: 0!important;\A 7:   padding-right: 0!important;\A 8:   max-height: 100px;\A 9:   background: $nav_bgcolor;\A 10:   @include box-shadow();\A 11:   .navbar-brand{\A 12:     width: 100%;\A 13:     height: 100%;\A 14:     min-height: 60px;"; }
