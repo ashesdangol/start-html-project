@@ -29,7 +29,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     *{
-      transition: all 0.35s ease;
+      transition: all 0.28s ease;
     }
     .nav-item{
       margin: .5rem 1rem;
@@ -41,21 +41,21 @@
           width: 14px;
           position: absolute;
           content: '';
-          transition: all 0.35s ease;
+          transition: all 0.28s ease;
           opacity: 0;
         }
         &:before{
           right: 0;
           top: 0;
-          border-right: 3px solid red;
-          border-top: 3px solid red;
+          border-right: 3px solid $menu-hover-border-color;
+          border-top: 3px solid $menu-hover-border-color;
           transform: translate(-100%, 50%);
         }
         &:after{
           left: 0;
           bottom: 0;
-          border-left: 3px solid red;
-          border-bottom: 2px solid red;
+          border-left: 3px solid $menu-hover-border-color;
+          border-bottom: 2px solid $menu-hover-border-color;
           transform: translate(100%,-50%);
         }
         &:hover:before, &:hover:after{
@@ -98,4 +98,5 @@ body{
 @import "assets";
 @import "basic_navigation";
 @import "slide_navigation";
+@import "index";
 @import "media_query";

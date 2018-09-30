@@ -8,11 +8,11 @@ Error: Undefined variable: "$nav_bgcolor".
 7:   padding-right: 0!important;
 8:   max-height: 100px;
 9:   background: $nav_bgcolor;
-10:   @include box-shadow();
-11:   .navbar-brand{
-12:     width: 100%;
-13:     height: 100%;
-14:     min-height: 60px;
+10:   .nav-link{
+11:     color: $nav_item--textcolor!important;
+12:   }
+13:   @include box-shadow();
+14:   .navbar-brand{
 
 Backtrace:
 sass/basic_navigation.scss:9
@@ -71,4 +71,4 @@ sass/basic_navigation.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$nav_bgcolor\".\A         on line 9 of sass/basic_navigation.scss\A \A 4:   width: 99.9%;\A 5:   padding-top: 0!important;\A 6:   padding-left: 0!important;\A 7:   padding-right: 0!important;\A 8:   max-height: 100px;\A 9:   background: $nav_bgcolor;\A 10:   @include box-shadow();\A 11:   .navbar-brand{\A 12:     width: 100%;\A 13:     height: 100%;\A 14:     min-height: 60px;"; }
+  content: "Error: Undefined variable: \"$nav_bgcolor\".\A         on line 9 of sass/basic_navigation.scss\A \A 4:   width: 99.9%;\A 5:   padding-top: 0!important;\A 6:   padding-left: 0!important;\A 7:   padding-right: 0!important;\A 8:   max-height: 100px;\A 9:   background: $nav_bgcolor;\A 10:   .nav-link{\A 11:     color: $nav_item--textcolor!important;\A 12:   }\A 13:   @include box-shadow();\A 14:   .navbar-brand{"; }

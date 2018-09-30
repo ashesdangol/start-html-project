@@ -7,6 +7,9 @@ nav{
   padding-right: 0!important;
   max-height: 100px;
   background: $nav_bgcolor;
+  .nav-link{
+    color: $nav_item--textcolor!important;
+  }
   @include box-shadow();
   .navbar-brand{
     width: 100%;
@@ -70,7 +73,7 @@ nav{
     .navbar-nav{
       .active{
         .nav-link{
-          color: $navbar_nav-item--activecolor;
+          color: $navbar_nav-item--activecolor!important;
         }
 
       }
@@ -79,6 +82,7 @@ nav{
 }
 @mixin nav-lg--below {
   nav{
+    background: $mobile_nav_bgcolor;
     .brand_and_btn--wrapper{
       display: flex;
       width: 100%;
@@ -91,7 +95,7 @@ nav{
       }
     }
     #navbarNav{
-      background: $nav_bgcolor;
+      background: $mobile_nav_bgcolor;
       position: absolute;
       left: 0;
       top: 100%;
@@ -106,8 +110,10 @@ nav{
 
 }
 #navbarNav.open-nav{
+  padding-top: 10%;
   display: flex!important;
   height: 100vh!important;
   transition: height 0.28s ease-in-out;
   overflow: auto;
+  background: $mobile_nav_bgcolor;
 }

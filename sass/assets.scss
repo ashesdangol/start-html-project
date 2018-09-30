@@ -1,5 +1,52 @@
-$nav_bgcolor: white;
-$nav-togglerbtn--bgcolor:white;
-$navbar_nav-item--activecolor:red;
-$nav_icon_bar--bgcolor:black;
+$nav_bgcolor: transparent;
+$nav-togglerbtn--bgcolor:transparent;
+$navbar_nav-item--activecolor:#FD1C03;
+$nav_icon_bar--bgcolor:white;
+$nav_item--textcolor: #FF6600;
+$mobile_nav_bgcolor:rgba(0,0,0,0.7);
+$menu-hover-border-color:#00FF00;
+@mixin menu-hover {
+  .navbar-nav{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    *{
+      transition: all 0.28s ease;
+    }
+    .nav-item{
+      margin: .5rem 1rem;
+      padding: 0;
+      .nav-link{
+        position: relative;
+        &:before,&:after{
+          height: 14px;
+          width: 14px;
+          position: absolute;
+          content: '';
+          transition: all 0.28s ease;
+          opacity: 0;
+        }
+        &:before{
+          right: 0;
+          top: 0;
+          border-right: 3px solid $menu-hover-border-color;
+          border-top: 3px solid $menu-hover-border-color;
+          transform: translate(-100%, 50%);
+        }
+        &:after{
+          left: 0;
+          bottom: 0;
+          border-left: 3px solid $menu-hover-border-color;
+          border-bottom: 2px solid $menu-hover-border-color;
+          transform: translate(100%,-50%);
+        }
+        &:hover:before, &:hover:after{
+          transform: translate(0%,0%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
 @include menu-hover();

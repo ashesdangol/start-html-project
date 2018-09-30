@@ -29,7 +29,7 @@ html, body {
   font-weight: 500;
   letter-spacing: 1px; }
   .navbar-nav * {
-    transition: all 0.35s ease; }
+    transition: all 0.28s ease; }
   .navbar-nav .nav-item {
     margin: .5rem 1rem;
     padding: 0; }
@@ -40,19 +40,19 @@ html, body {
         width: 14px;
         position: absolute;
         content: '';
-        transition: all 0.35s ease;
+        transition: all 0.28s ease;
         opacity: 0; }
       .navbar-nav .nav-item .nav-link:before {
         right: 0;
         top: 0;
-        border-right: 3px solid red;
-        border-top: 3px solid red;
+        border-right: 3px solid #00FF00;
+        border-top: 3px solid #00FF00;
         transform: translate(-100%, 50%); }
       .navbar-nav .nav-item .nav-link:after {
         left: 0;
         bottom: 0;
-        border-left: 3px solid red;
-        border-bottom: 2px solid red;
+        border-left: 3px solid #00FF00;
+        border-bottom: 2px solid #00FF00;
         transform: translate(100%, -50%); }
       .navbar-nav .nav-item .nav-link:hover:before, .navbar-nav .nav-item .nav-link:hover:after {
         transform: translate(0%, 0%);
@@ -66,8 +66,10 @@ nav {
   padding-left: 0 !important;
   padding-right: 0 !important;
   max-height: 100px;
-  background: white;
+  background: transparent;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
+  nav .nav-link {
+    color: #FF6600 !important; }
   nav .navbar-brand {
     width: 100%;
     height: 100%;
@@ -84,13 +86,13 @@ nav {
       object-position: center; }
   nav .navbar-toggler {
     border: none;
-    background: white;
+    background: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none !important; }
     nav .navbar-toggler .icon-bar {
       display: block;
-      background: black;
+      background: white;
       margin-top: 3px;
       margin-bottom: 3px;
       height: 2px;
@@ -115,13 +117,15 @@ nav {
       -ms-transform-origin: 10% 90%;
       transform-origin: 10% 90%; }
   nav #navbarNav .navbar-nav .active .nav-link {
-    color: red; }
+    color: #FD1C03 !important; }
 
 #navbarNav.open-nav {
+  padding-top: 10%;
   display: flex !important;
   height: 100vh !important;
   transition: height 0.28s ease-in-out;
-  overflow: auto; }
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7); }
 
 nav {
   position: fixed !important;
@@ -131,7 +135,7 @@ nav {
   padding-left: 0 !important;
   padding-right: 0 !important;
   max-height: 100px;
-  background: white;
+  background: transparent;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
   nav .navbar-brand {
     width: 100%;
@@ -149,13 +153,13 @@ nav {
       object-position: center; }
   nav .navbar-toggler {
     border: none;
-    background: white;
+    background: transparent;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: none !important; }
     nav .navbar-toggler .icon-bar {
       display: block;
-      background: black;
+      background: white;
       margin-top: 3px;
       margin-bottom: 3px;
       height: 2px;
@@ -188,7 +192,7 @@ nav {
       -ms-transform-origin: 10% 90%;
       transform-origin: 10% 90%; }
   nav #navbarNav .navbar-nav .active .nav-link {
-    color: red; }
+    color: #FD1C03; }
 
 #navbarNav.open-nav {
   left: 0 !important;
@@ -212,24 +216,32 @@ nav {
     transition: all 1s ease-in-out;
     opacity: 1; }
 
+.banner figure img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center; }
+
 @media only screen and (max-width: 991px) {
-  nav .brand_and_btn--wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 14px !important;
-    padding-right: 14px !important; }
-  nav #navbarNav {
-    background: white;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100vw;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.28s ease-in-out;
-    padding-left: 14px !important;
-    padding-right: 14px !important; } }
+  nav {
+    background: rgba(0, 0, 0, 0.7); }
+    nav .brand_and_btn--wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 14px !important;
+      padding-right: 14px !important; }
+    nav #navbarNav {
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100vw;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.28s ease-in-out;
+      padding-left: 14px !important;
+      padding-right: 14px !important; } }
 
 /*# sourceMappingURL=main_stylesheet.css.map */
