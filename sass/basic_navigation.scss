@@ -1,5 +1,5 @@
 nav{
-  position: fixed!important;
+  position: absolute!important;
   top: 0!important;
   width: 99.9%;
   padding-top: 0!important;
@@ -100,14 +100,6 @@ nav{
       overflow: hidden;
       transition: height 0.28s ease-in-out;
       @include default-padding();
-      .nav-link{
-        -webkit-transform: translate(0, -100px);
-        -moz-transform: translate(0, -100px);
-        -o-transform: translate(0, -100px);
-        -ms-transform: translate(0, -100px);
-        transform: translate(0, -100px);
-        opacity: 0;
-      }
 
     }
   }
@@ -118,13 +110,4 @@ nav{
   height: 100vh!important;
   transition: height 0.28s ease-in-out;
   overflow: auto;
-  .nav-link{
-    -webkit-transform: translate(0, 0px);
-    -moz-transform: translate(0, 0px);
-    -o-transform: translate(0, 0px);
-    -ms-transform: translate(0, 0px);
-    transform: translate(0, 0px);
-    transition: all 0.1s ease-in-out;
-    opacity: 1;
-  }
 }

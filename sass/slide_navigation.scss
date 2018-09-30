@@ -39,29 +39,20 @@ nav{
       margin-bottom: 3px;
       height: 2px;
       width: 22px;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s;
+      @include prefix-transition(all 0.2s);
     }
     &.x{
       .icon-bar:nth-of-type(1) {
-      	-webkit-transform: rotate(45deg);
-      	-ms-transform: rotate(45deg);
-      	transform: rotate(45deg);
-      	-webkit-transform-origin: 19% 10%;
-      	-ms-transform-origin: 19% 10%;
-      	transform-origin: 19% 10%;
+        @include prefix-transform(rotate(45deg));
+        @include prefix-origin(20% 10%);
       }
       .icon-bar:nth-of-type(2) {
       	opacity: 0;
       	filter: alpha(opacity=0);
       }
       .icon-bar:nth-of-type(3) {
-      	-webkit-transform: rotate(-45deg);
-      	-ms-transform: rotate(-45deg);
-      	transform: rotate(-45deg);
-      	-webkit-transform-origin: 10% 90%;
-      	-ms-transform-origin: 10% 90%;
-      	transform-origin: 10% 90%;
+        @include prefix-transform(rotate(-45deg));
+        @include prefix-origin(10% 90%);
       }
     }
 
@@ -97,11 +88,12 @@ nav{
       top: 100%;
       width: 0vw;
       height: 100vh;
-      overflow: hidden;
-      transition: all 0.28s ease-in-out;
+      // overflow: hidden;
+      overflow-y: hidden;
+      @include prefix-transition(all 0.28s ease-in-out);
       @include default-padding();
       .nav-link{
-        transform: translate(0, -100px);
+        @include prefix-transform(translate(0, -100px));
         opacity: 0;
       }
     }
@@ -112,11 +104,11 @@ nav{
   left: 0!important;
   display: flex!important;
   width: 100vw!important;
-  transition: all 0.28s ease-in-out;
+  @include prefix-transition(all 0.28s ease-in-out);
   overflow: auto;
   .nav-link{
-    transform: translate(0, 0px);
-    transition: all 1s ease-in-out;
+    @include prefix-transform(translate(0, 0px));
+    @include prefix-transition(all 1s ease-in-out);
     opacity: 1;
   }
 }

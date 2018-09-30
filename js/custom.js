@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  function basic_navigation(){
+
+  function navigation(){
     $('nav').on('click','.navbar-toggler', function(){
       $(this).closest('nav').find('#navbarNav').toggleClass('open-nav');
       $(this).toggleClass('x');
@@ -26,25 +27,31 @@ $(document).ready(function(){
         $('body').removeClass('hide-overflow');
       }
     });
-    var lastScrollPosition=0;
-    $(document).on('scroll', function(){
-      var currentScrollPosition=$(this).scrollTop();
-      if(currentScrollPosition > lastScrollPosition){
+  }
+  function onScroll_hidemenu() {
+    var noMenuScroll = $(document).find('.open-nav');
+    if (noMenuScroll.length<=0) {
+      var lastScrollPosition=0;
+      $(document).on('scroll', function(){
+        var currentScrollPosition=$(this).scrollTop();
+        if(currentScrollPosition > lastScrollPosition){
 
-        $(this).find('nav').removeClass('show-this');
-        $(this).find('nav').addClass('hide-this');
-        $(this).find('body').addClass('hide-padding');
+          $(this).find('nav').removeClass('show-this');
+          $(this).find('nav').addClass('hide-this');
+          $(this).find('body').addClass('hide-padding');
 
-      }else{
-        $(this).find('body').removeClass('hide-padding');
-        $(this).find('nav').removeClass('hide-this');
-        $(this).find('nav').addClass('show-this');
-      }
-      lastScrollPosition=currentScrollPosition;
-    })
+        }else{
+          $(this).find('body').removeClass('hide-padding');
+          $(this).find('nav').removeClass('hide-this');
+          $(this).find('nav').addClass('show-this');
+        }
+        lastScrollPosition=currentScrollPosition;
+      })
+    }
+
 
   }
-  basic_navigation();
-
+  navigation();
+  onScroll_hidemenu();
 
 });
