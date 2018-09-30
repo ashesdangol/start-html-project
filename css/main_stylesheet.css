@@ -23,6 +23,41 @@ html, body {
   position: fixed !important;
   top: 0 !important; }
 
+.navbar-nav {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px; }
+  .navbar-nav * {
+    transition: all 0.35s ease; }
+  .navbar-nav .nav-item {
+    margin: .5rem 1rem;
+    padding: 0; }
+    .navbar-nav .nav-item .nav-link {
+      position: relative; }
+      .navbar-nav .nav-item .nav-link:before, .navbar-nav .nav-item .nav-link:after {
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        content: '';
+        transition: all 0.35s ease;
+        opacity: 0; }
+      .navbar-nav .nav-item .nav-link:before {
+        right: 0;
+        top: 0;
+        border-right: 3px solid red;
+        border-top: 3px solid red;
+        transform: translate(-100%, 50%); }
+      .navbar-nav .nav-item .nav-link:after {
+        left: 0;
+        bottom: 0;
+        border-left: 3px solid red;
+        border-bottom: 2px solid red;
+        transform: translate(100%, -50%); }
+      .navbar-nav .nav-item .nav-link:hover:before, .navbar-nav .nav-item .nav-link:hover:after {
+        transform: translate(0%, 0%);
+        opacity: 1; }
+
 nav {
   position: absolute !important;
   top: 0 !important;

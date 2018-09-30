@@ -2,3 +2,4 @@ $nav_bgcolor: white;
 $nav-togglerbtn--bgcolor:white;
 $navbar_nav-item--activecolor:red;
 $nav_icon_bar--bgcolor:black;
+@include menu-hover();
