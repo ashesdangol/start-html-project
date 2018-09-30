@@ -1,15 +1,24 @@
 :root {
   font-size: 14px; }
 
+html, body {
+  min-height: 100vh; }
+
 .hide-overflow {
   overflow: hidden; }
 
 .hide-this {
   position: fixed !important;
   top: -90px !important;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out; }
 
 .show-this {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   position: fixed !important;
   top: 0 !important; }

@@ -1,30 +1,3 @@
-:root{
-  font-size: 14px;
-}
-html,body{
-  // min-height: 100vh;
-
-}
-body{
-  // padding-top: 20px!important;
-}
-.hide-overflow{
-  overflow: hidden;
-}
-.hide-this{
-  position: fixed!important;
-  top: -90px!important;
-  transition: all 0.25s ease-in-out;
-}
-.show-this{
-  transition: all 0.25s ease-in-out;
-  position: fixed!important;
-  top: 0!important;
-}
-.hide-padding{
-  // padding-top:0px!important;
-}
-
 @mixin box-shadow(){
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -49,6 +22,35 @@ body{
   transform-origin: $x;
 
 }
+:root{
+  font-size: 14px;
+}
+html,body{
+  min-height: 100vh;
+
+
+}
+body{
+  // padding-top: 20px!important;
+}
+.hide-overflow{
+  overflow: hidden;
+}
+.hide-this{
+  position: fixed!important;
+  top: -90px!important;
+  @include prefix-transition(all 0.25s ease-in-out);
+}
+.show-this{
+  @include prefix-transition(all 0.25s ease-in-out);
+  position: fixed!important;
+  top: 0!important;
+}
+.hide-padding{
+  // padding-top:0px!important;
+}
+
+
 @import "assets";
 @import "basic_navigation";
 @import "slide_navigation";
