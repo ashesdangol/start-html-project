@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('nav').on('click','.navbar-toggler', function(){
       $(this).closest('nav').find('#navbarNav').toggleClass('open-nav');
       $(this).toggleClass('x');
-      $('body').toggleClass('hide-overflow');
+      $('html, body').toggleClass('hide-overflow');
     });
 
     $('nav').on('click','.nav-item', function(){
@@ -29,8 +29,6 @@ $(document).ready(function(){
     });
   }
   function onScroll_hidemenu() {
-    var noMenuScroll = $(document).find('.open-nav');
-    if (noMenuScroll.length<=0) {
       var lastScrollPosition=0;
       $(document).on('scroll', function(){
         var currentScrollPosition=$(this).scrollTop();
@@ -47,8 +45,6 @@ $(document).ready(function(){
         }
         lastScrollPosition=currentScrollPosition;
       })
-    }
-
 
   }
   navigation();

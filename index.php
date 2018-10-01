@@ -1,6 +1,6 @@
 <?php include('partials/header.php');?>
 
- <?php include('partials/slide_navigation.php');?>
+ <?php include('partials/basic_navigation.php');?>
  <section class="banner">
      <figure>
        <img src="img/sion_pic.jpg" alt="australia" class="img-fluid">

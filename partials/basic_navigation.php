@@ -2,7 +2,7 @@
   <div class="container nav_main--wrapper">
     <div class="brand_and_btn--wrapper">
       <a class="navbar-brand" href="index.php">
-        <img src="img/logo.svg" class="img-fluid" alt="logo">
+        <img src="img/csu.png" class="img-fluid" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" >
         <span class="icon-bar"></span>
