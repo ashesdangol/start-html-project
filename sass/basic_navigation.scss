@@ -7,6 +7,7 @@ nav{
   padding-right: 0!important;
   max-height: 100px;
   background: $nav_bgcolor;
+  z-index: 9999999!important;
   .nav-link{
     color: $nav_item--textcolor!important;
   }
@@ -73,6 +74,7 @@ nav{
       .active{
         .nav-link{
           color: $navbar_nav-item--activecolor!important;
+          font-weight: $nav_item--fontweight;
         }
 
       }

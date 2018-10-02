@@ -47,7 +47,24 @@ $(document).ready(function(){
       })
 
   }
+  function banner_slider(){
+    $('.banner_slider--wrapper').slick({
+      dots: true,
+      arrows:false,
+      infinite: true,
+      slidesToShow: 1,
+      autoplay: false,
+      autoplaySpeed:5000,
+      cssEase:'ease-in-out'
+    });
+    
+  }
+
+
+
+
   navigation();
   onScroll_hidemenu();
+  banner_slider();
 
 });

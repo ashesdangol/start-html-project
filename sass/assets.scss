@@ -3,8 +3,50 @@ $nav-togglerbtn--bgcolor:transparent;
 $navbar_nav-item--activecolor:#FD1C03;
 $nav_icon_bar--bgcolor:white;
 $nav_item--textcolor: #FF6600;
+$nav_item--fontweight: medium;
 $mobile_nav_bgcolor:rgba(0,0,0,0.7);
 $menu-hover-border-color:#00FF00;
+$banner__overlay--textcolor:white;
+
+@mixin banner_overlay {
+  .banner__overlay{
+    position: relative;
+    &:before{
+      position: absolute;
+      top: 0;
+      content: " ";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+  }
+
+}
+@include banner_overlay();
+@mixin overlay-texts{
+  .overlay--texts{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: 1;
+    transform: translateX(-20%);
+    color: $banner__overlay--textcolor;
+
+  }
+}
+@include overlay-texts();
+@mixin overlay-texts--sm{
+  .overlay--texts{
+    width: 100%;
+    position: absolute;
+    bottom:10%;
+    left: 20%;
+    z-index: 1;
+    padding-left: 14px;
+    // transform: translateX(-50%);
+  }
+}
 @mixin menu-hover {
   .navbar-nav{
     text-align: center;
@@ -50,3 +92,54 @@ $menu-hover-border-color:#00FF00;
   }
 }
 @include menu-hover();
+@mixin glitch-effect {
+  .glitch{
+    color:$banner__overlay--textcolor;
+    position:relative;
+    width:400px;
+    // margin:0 auto;
+  }
+  @keyframes noise-anim{
+    $steps:20;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip:rect(random(100)+px,9999px,random(100)+px,0);
+      }
+    }
+  }
+  .glitch:after{
+    content:attr(data-text);
+    position:absolute;
+    left:2px;
+    text-shadow:-1px 0 red;
+    top:0;
+    color:white;
+    background:transparent;
+    overflow:hidden;
+    clip:rect(0,900px,0,0);
+    animation:noise-anim 2s infinite linear alternate-reverse;
+  }
+
+  @keyframes noise-anim-2{
+    $steps:20;
+    @for $i from 0 through $steps{
+      #{percentage($i*(1/$steps))}{
+        clip:rect(random(100)+px,9999px,random(100)+px,0);
+      }
+    }
+  }
+  .glitch:before{
+    content:attr(data-text);
+    position:absolute;
+    left:-2px;
+    text-shadow:1px 0 blue;
+    top:0;
+    color:white;
+    background:transparent;
+    overflow:hidden;
+    clip:rect(0,900px,0,0);
+    animation:noise-anim-2 3s infinite linear alternate-reverse;
+  }
+
+}
+@include glitch-effect();
