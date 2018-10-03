@@ -56,7 +56,16 @@
     figure{
       position: relative;
       img{
+        -webkit-animation: scaling 2s ease forwards;
         animation: scaling 2s ease forwards;
+      }
+      @-webkit-keyframes scaling{
+        from{
+          transform: scale(1.5);
+        }
+        to{
+          transform: scale(1);
+        }
       }
       @keyframes scaling{
         from{
@@ -112,7 +121,7 @@
        50%{
          width: 0%;
          height: 60%;
-         border-left-color: $animate__border--color;
+         border-left-color:$animate__border--color;
        }
 
        100%{

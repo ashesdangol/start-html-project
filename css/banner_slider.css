@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$animate__border--color".
-        on line 115 of sass/banner_slider.scss
+        on line 124 of sass/banner_slider.scss
 
-110:          height: 30%;
-111:        }
-112:        50%{
-113:          width: 0%;
-114:          height: 60%;
-115:          border-left-color: $animate__border--color;
-116:        }
-117: 
-118:        100%{
-119:          width: 80%;
-120:          height: 60%;
+119:          height: 30%;
+120:        }
+121:        50%{
+122:          width: 0%;
+123:          height: 60%;
+124:          border-left-color:$animate__border--color;
+125:        }
+126: 
+127:        100%{
+128:          width: 80%;
+129:          height: 60%;
 
 Backtrace:
-sass/banner_slider.scss:115
+sass/banner_slider.scss:124
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -104,4 +104,4 @@ sass/banner_slider.scss:115
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$animate__border--color\".\A         on line 115 of sass/banner_slider.scss\A \A 110:          height: 30%;\A 111:        }\A 112:        50%{\A 113:          width: 0%;\A 114:          height: 60%;\A 115:          border-left-color: $animate__border--color;\A 116:        }\A 117: \A 118:        100%{\A 119:          width: 80%;\A 120:          height: 60%;"; }
+  content: "Error: Undefined variable: \"$animate__border--color\".\A         on line 124 of sass/banner_slider.scss\A \A 119:          height: 30%;\A 120:        }\A 121:        50%{\A 122:          width: 0%;\A 123:          height: 60%;\A 124:          border-left-color:$animate__border--color;\A 125:        }\A 126: \A 127:        100%{\A 128:          width: 80%;\A 129:          height: 60%;"; }
