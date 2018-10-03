@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$animate__border--color".
-        on line 97 of sass/banner_slider.scss
+        on line 115 of sass/banner_slider.scss
 
-92: 
-93:      }
-94:      50%{
-95:        width: 0%;
-96:        height: 60%;
-97:        border-left-color: $animate__border--color;
-98:      }
-99: 
-100:      100%{
-101:        width: 80%;
-102:        height: 60%;
+110:          height: 30%;
+111:        }
+112:        50%{
+113:          width: 0%;
+114:          height: 60%;
+115:          border-left-color: $animate__border--color;
+116:        }
+117: 
+118:        100%{
+119:          width: 80%;
+120:          height: 60%;
 
 Backtrace:
-sass/banner_slider.scss:97
+sass/banner_slider.scss:115
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -104,4 +104,4 @@ sass/banner_slider.scss:97
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$animate__border--color\".\A         on line 97 of sass/banner_slider.scss\A \A 92: \A 93:      }\A 94:      50%{\A 95:        width: 0%;\A 96:        height: 60%;\A 97:        border-left-color: $animate__border--color;\A 98:      }\A 99: \A 100:      100%{\A 101:        width: 80%;\A 102:        height: 60%;"; }
+  content: "Error: Undefined variable: \"$animate__border--color\".\A         on line 115 of sass/banner_slider.scss\A \A 110:          height: 30%;\A 111:        }\A 112:        50%{\A 113:          width: 0%;\A 114:          height: 60%;\A 115:          border-left-color: $animate__border--color;\A 116:        }\A 117: \A 118:        100%{\A 119:          width: 80%;\A 120:          height: 60%;"; }
