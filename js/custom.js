@@ -54,17 +54,14 @@ $(document).ready(function(){
       infinite: true,
       slidesToShow: 1,
       autoplay: false,
-      autoplaySpeed:5000,
-      cssEase:'ease-in-out'
+      autoplaySpeed:5000
+
     });
-    
+
   }
-
-
-
-
   navigation();
   onScroll_hidemenu();
   banner_slider();
+
 
 });

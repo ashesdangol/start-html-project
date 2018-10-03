@@ -1,170 +1,108 @@
-.banner__overlay {
-  position: relative; }
-  .banner__overlay:before {
-    position: absolute;
-    top: 0;
-    content: " ";
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4); }
+/*
+Error: Undefined mixin 'prefix-transform'.
+        on line 47 of sass/assets.scss, in `prefix-transform'
+        from line 47 of sass/assets.scss, in `overlay-texts'
+        from line 52 of sass/assets.scss
 
-.overlay--texts {
-  position: absolute;
-  bottom: 0%;
-  left: 20%;
-  z-index: 1;
-  transform: translateX(-20%);
-  color: white; }
+42:       position: absolute;
+43:       width: 80%;
+44:       opacity: 1;
+45:       bottom: 10%;
+46:       left: 50%;
+47:       @include prefix-transform(translateX(-50%));
+48:       @include prefix-transition(all 1s ease);
+49:     }
+50:   }
+51: }
+52: @include overlay-texts();
 
-.navbar-nav {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px; }
-  .navbar-nav * {
-    transition: all 0.28s ease; }
-  .navbar-nav .nav-item {
-    margin: .5rem 1rem;
-    padding: 0; }
-    .navbar-nav .nav-item .nav-link {
-      position: relative; }
-      .navbar-nav .nav-item .nav-link:before, .navbar-nav .nav-item .nav-link:after {
-        height: 14px;
-        width: 14px;
-        position: absolute;
-        content: '';
-        transition: all 0.28s ease;
-        opacity: 0; }
-      .navbar-nav .nav-item .nav-link:before {
-        right: 0;
-        top: 0;
-        border-right: 3px solid #00FF00;
-        border-top: 3px solid #00FF00;
-        transform: translate(-100%, 50%); }
-      .navbar-nav .nav-item .nav-link:after {
-        left: 0;
-        bottom: 0;
-        border-left: 3px solid #00FF00;
-        border-bottom: 2px solid #00FF00;
-        transform: translate(100%, -50%); }
-      .navbar-nav .nav-item .nav-link:hover:before, .navbar-nav .nav-item .nav-link:hover:after {
-        transform: translate(0%, 0%);
-        opacity: 1; }
-
-.glitch {
-  color: white;
-  position: relative;
-  width: 400px; }
-
-@keyframes noise-anim {
-  0% {
-    clip: rect(19px, 9999px, 4px, 0); }
-  5% {
-    clip: rect(75px, 9999px, 100px, 0); }
-  10% {
-    clip: rect(43px, 9999px, 44px, 0); }
-  15% {
-    clip: rect(84px, 9999px, 37px, 0); }
-  20% {
-    clip: rect(21px, 9999px, 2px, 0); }
-  25% {
-    clip: rect(7px, 9999px, 75px, 0); }
-  30% {
-    clip: rect(22px, 9999px, 46px, 0); }
-  35% {
-    clip: rect(78px, 9999px, 32px, 0); }
-  40% {
-    clip: rect(52px, 9999px, 51px, 0); }
-  45% {
-    clip: rect(20px, 9999px, 8px, 0); }
-  50% {
-    clip: rect(64px, 9999px, 86px, 0); }
-  55% {
-    clip: rect(74px, 9999px, 50px, 0); }
-  60% {
-    clip: rect(65px, 9999px, 59px, 0); }
-  65% {
-    clip: rect(63px, 9999px, 98px, 0); }
-  70% {
-    clip: rect(30px, 9999px, 2px, 0); }
-  75% {
-    clip: rect(100px, 9999px, 23px, 0); }
-  80% {
-    clip: rect(36px, 9999px, 2px, 0); }
-  85% {
-    clip: rect(91px, 9999px, 36px, 0); }
-  90% {
-    clip: rect(84px, 9999px, 52px, 0); }
-  95% {
-    clip: rect(66px, 9999px, 52px, 0); }
-  100% {
-    clip: rect(6px, 9999px, 70px, 0); } }
-.glitch:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -1px 0 red;
-  top: 0;
-  color: white;
-  background: transparent;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim 2s infinite linear alternate-reverse; }
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(24px, 9999px, 71px, 0); }
-  5% {
-    clip: rect(5px, 9999px, 66px, 0); }
-  10% {
-    clip: rect(71px, 9999px, 62px, 0); }
-  15% {
-    clip: rect(23px, 9999px, 45px, 0); }
-  20% {
-    clip: rect(61px, 9999px, 62px, 0); }
-  25% {
-    clip: rect(80px, 9999px, 76px, 0); }
-  30% {
-    clip: rect(75px, 9999px, 5px, 0); }
-  35% {
-    clip: rect(35px, 9999px, 20px, 0); }
-  40% {
-    clip: rect(13px, 9999px, 68px, 0); }
-  45% {
-    clip: rect(16px, 9999px, 39px, 0); }
-  50% {
-    clip: rect(22px, 9999px, 88px, 0); }
-  55% {
-    clip: rect(28px, 9999px, 20px, 0); }
-  60% {
-    clip: rect(28px, 9999px, 67px, 0); }
-  65% {
-    clip: rect(57px, 9999px, 15px, 0); }
-  70% {
-    clip: rect(45px, 9999px, 49px, 0); }
-  75% {
-    clip: rect(100px, 9999px, 37px, 0); }
-  80% {
-    clip: rect(86px, 9999px, 96px, 0); }
-  85% {
-    clip: rect(33px, 9999px, 99px, 0); }
-  90% {
-    clip: rect(18px, 9999px, 59px, 0); }
-  95% {
-    clip: rect(27px, 9999px, 25px, 0); }
-  100% {
-    clip: rect(91px, 9999px, 65px, 0); } }
-.glitch:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 0;
-  color: white;
-  background: transparent;
-  overflow: hidden;
-  clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse; }
-
-/*# sourceMappingURL=assets.css.map */
+Backtrace:
+sass/assets.scss:47:in `prefix-transform'
+sass/assets.scss:47:in `overlay-texts'
+sass/assets.scss:52
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:367:in `block (4 levels) in visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:367:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:367:in `block (3 levels) in visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:367:in `block (2 levels) in visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:86:in `perform_arguments'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:362:in `block in visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'prefix-transform'.\A         on line 47 of sass/assets.scss, in `prefix-transform'\A         from line 47 of sass/assets.scss, in `overlay-texts'\A         from line 52 of sass/assets.scss\A \A 42:       position: absolute;\A 43:       width: 80%;\A 44:       opacity: 1;\A 45:       bottom: 10%;\A 46:       left: 50%;\A 47:       @include prefix-transform(translateX(-50%));\A 48:       @include prefix-transition(all 1s ease);\A 49:     }\A 50:   }\A 51: }\A 52: @include overlay-texts();"; }

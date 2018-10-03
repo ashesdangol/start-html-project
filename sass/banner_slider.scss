@@ -1,5 +1,5 @@
 .banner_slider--main{
-  // border: 5px solid red;
+  position: relative;
   figure{
     margin-bottom: 0;
     min-height: 500px;
@@ -30,23 +30,144 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    align-items: center;
-    padding-right: 5px;
-
+    padding-right: 10%;
     li{
       list-style-type: none;
       margin: 0 5px;
+      display: flex;
+      align-items: center;
+      height: 20px;
       &.slick-active button{
         border: 1px solid white;
       }
       button{
         width: 5px;
-        height: 2px;
+        height: 5px;
         overflow: hidden;
         background: #FF6600;
         cursor: pointer;
         border: none;
       }
     }
+  }
+  .slick-active{
+    figure{
+      position: relative;
+      &:after,&:before{
+         position: absolute;
+         display: block;
+         content: '';
+         width: 0%;
+         height: 0%;
+         background: transparent;
+         transition: all .3s;
+         border: 3px solid transparent;
+         z-index: 1;
+
+       }
+       &:after{
+         top: 50%;
+         left: 10%;
+         transform: translateY(-50%);
+         -webkit-animation: animate 0.5s linear forwards;
+         animation: animate 0.5s linear forwards;
+
+       }
+       &:before{
+         top: 50%;
+         right: 10%;
+         transform: translateY(-50%);
+         -webkit-animation: animate2 0.5s linear forwards;
+        -webkit-animation-delay: 0.5s;
+        animation: animate2 0.5s linear forwards;
+        animation-delay: 0.5s;
+
+       }
+
+    }
+     @-webkit-keyframes animate{
+     0%{
+       width: 0%;
+       height: 0%;
+
+     }
+     50%{
+       width: 0%;
+       height: 60%;
+       border-left-color: $animate__border--color;
+     }
+
+     100%{
+       width: 80%;
+       height: 60%;
+       border-left-color: $animate__border--color;
+       border-bottom-color:$animate__border--color;
+     }
+
+    }
+     @keyframes animate{
+       0%{
+         width: 0%;
+         height: 0%;
+
+       }
+       50%{
+         width: 0%;
+         height: 60%;
+         border-left-color: $animate__border--color;
+       }
+
+       100%{
+         width: 80%;
+         height: 60%;
+         border-left-color: $animate__border--color;
+         border-bottom-color:$animate__border--color;
+       }
+
+     }
+     @-webkit-keyframes animate2{
+        0%{
+          width: 0%;
+          height: 0%;
+
+        }
+        50%{
+          width: 0%;
+          height: 60%;
+          border-right-color: $animate__border--color;
+        }
+
+        100%{
+          width: 80%;
+          height: 60%;
+          border-top-color: $animate__border--color;
+          border-right-color: $animate__border--color;
+        }
+      }
+      @keyframes animate2{
+        0%{
+          width: 0%;
+          height: 0%;
+
+        }
+        50%{
+          width: 0%;
+          height: 60%;
+          border-right-color: $animate__border--color;
+        }
+
+        100%{
+          width: 80%;
+          height: 60%;
+          border-top-color: $animate__border--color;
+          border-right-color: $animate__border--color;
+        }
+
+      }
+
+
+
+
+
   }
 }

@@ -1,40 +1,107 @@
-.banner_slider--main figure {
-  margin-bottom: 0;
-  min-height: 500px; }
-  .banner_slider--main figure img {
-    width: 100%;
-    min-height: 500px;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center; }
-.banner_slider--main .overlay--texts h1 {
-  margin-bottom: 0%;
-  font-size: 2.57rem;
-  font-weight: 500;
-  line-height: 40px; }
-.banner_slider--main .overlay--texts p {
-  font-weight: 500;
-  font-size: 1.21rem;
-  line-height: 18px; }
-.banner_slider--main .slick-dots {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 5px; }
-  .banner_slider--main .slick-dots li {
-    list-style-type: none;
-    margin: 0 5px; }
-    .banner_slider--main .slick-dots li.slick-active button {
-      border: 1px solid white; }
-    .banner_slider--main .slick-dots li button {
-      width: 5px;
-      height: 2px;
-      overflow: hidden;
-      background: #FF6600;
-      cursor: pointer;
-      border: none; }
+/*
+Error: Undefined variable: "$animate__border--color".
+        on line 97 of sass/banner_slider.scss
 
-/*# sourceMappingURL=banner_slider.css.map */
+92: 
+93:      }
+94:      50%{
+95:        width: 0%;
+96:        height: 60%;
+97:        border-left-color: $animate__border--color;
+98:      }
+99: 
+100:      100%{
+101:        width: 80%;
+102:        height: 60%;
+
+Backtrace:
+sass/banner_slider.scss:97
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:517:in `block (2 levels) in visit_directive'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:517:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:517:in `block in visit_directive'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:516:in `visit_directive'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$animate__border--color\".\A         on line 97 of sass/banner_slider.scss\A \A 92: \A 93:      }\A 94:      50%{\A 95:        width: 0%;\A 96:        height: 60%;\A 97:        border-left-color: $animate__border--color;\A 98:      }\A 99: \A 100:      100%{\A 101:        width: 80%;\A 102:        height: 60%;"; }

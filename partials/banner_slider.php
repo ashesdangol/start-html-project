@@ -1,11 +1,11 @@
-<section class="banner_slider--main">
+<section class="banner_slider--main" id="main_banner">
   <div class="banner_slider--wrapper">
     <div class="banner_slider--contents banner__overlay">
       <figure>
         <img src="img/sion_pic.jpg" alt="australia" class="img-fluid">
       </figure>
       <div class="banner_slider--notes overlay--texts">
-        <div class="overlay--texts--wrapper animated fadeInDown delay-2s">
+        <div class="overlay--texts--wrapper animated">
           <h1>Photography</h1>
           <p class="glitch" data-text="Sion Chhetri">Sion Chhetri</p>
         </div>
@@ -16,7 +16,7 @@
         <img src="img/sis2.jpg" alt="banner" class="img-fluid">
       </figure>
       <div class="banner_slider--notes overlay--texts">
-        <div class="overlay--texts--wrapper animated fadeInDown delay-2s">
+        <div class="overlay--texts--wrapper animated">
           <h1>Photography</h1>
           <p class="glitch" data-text="Sishir Maharjan">Sishir Maharjan</p>
         </div>
@@ -27,7 +27,7 @@
         <img src="img/sis3.jpg" alt="banner" class="img-fluid">
       </figure>
       <div class="banner_slider--notes overlay--texts">
-        <div class="overlay--texts--wrapper animated fadeInDown delay-2s">
+        <div class="overlay--texts--wrapper animated">
           <h1>Photography</h1>
           <p class="glitch" data-text="Sishir Maharjan">Sishir Maharjan</p>
         </div>
@@ -38,7 +38,7 @@
         <img src="img/alex-wong.jpg" alt="banner" class="img-fluid">
       </figure>
       <div class="banner_slider--notes overlay--texts">
-        <div class="overlay--texts--wrapper animated fadeInDown delay-2s">
+        <div class="overlay--texts--wrapper animated">
           <h1>Photography</h1>
           <p class="glitch" data-text="Alex Wong">Alex Wong</p>
         </div>
@@ -49,7 +49,7 @@
         <img src="img/jonatan.jpg" alt="banner" class="img-fluid">
       </figure>
       <div class="banner_slider--notes overlay--texts">
-        <div class="overlay--texts--wrapper animated fadeInDown delay-2s">
+        <div class="overlay--texts--wrapper animated">
           <h1>Photography</h1>
           <p class="glitch" data-text="Jonatan">Jonatan</p>
         </div>
@@ -60,7 +60,7 @@
         <img src="img/markus.jpg" alt="banner" class="img-fluid">
       </figure>
       <div class="banner_slider--notes overlay--texts">
-        <div class="overlay--texts--wrapper animated fadeInDown delay-2s">
+        <div class="overlay--texts--wrapper animated">
           <h1>Photography</h1>
           <p class="glitch" data-text="Markus">Markus</p>
         </div>
