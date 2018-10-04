@@ -1,3 +1,4 @@
+// NAVIGATION
 $nav_bgcolor: transparent;
 $nav-togglerbtn--bgcolor:transparent;
 $navbar_nav-item--activecolor:#FD1C03;
@@ -6,8 +7,14 @@ $nav_item--textcolor: #FF6600;
 $nav_item--fontweight: 800;
 $mobile_nav_bgcolor:rgba(0,0,0,0.7);
 $menu-hover-border-color:#00FF00;
+
+// BANNER
 $banner__overlay--textcolor:white;
 $animate__border--color:white;
+
+// ANIMATE
+
+
 
 @mixin banner_overlay {
   .banner__overlay{

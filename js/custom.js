@@ -63,5 +63,4 @@ $(document).ready(function(){
   onScroll_hidemenu();
   banner_slider();
 
-
 });

@@ -5,6 +5,11 @@
   padding-left: 14px!important;
   padding-right: 14px!important;
 }
+@mixin default-padding--topbottom{
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
 @mixin prefix-transform($x) {
   -webkit-transform: $x; /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
       -ms-transform: $x; /* IE 9 */
@@ -36,7 +41,11 @@ body{
   *{
     font-family: 'Montserrat', sans-serif;
   }
+  section:not(:nth-of-type(1)){
+    @include default-padding--topbottom;
+  }
 }
+
 .hide-overflow{
   overflow: hidden;
 }
@@ -60,5 +69,6 @@ body{
 // @import "slide_navigation";
 @import "index";
 @import "banner_slider";
+@import "animate_element";
 @import "under_construction";
 @import "media_query";

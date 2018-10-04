@@ -1,0 +1,42 @@
+#animate__element--main .header--wrapper {
+  margin-bottom: 40px; }
+  #animate__element--main .header--wrapper header {
+    text-align: center;
+    margin: 40px; }
+  #animate__element--main .header--wrapper .header--description {
+    text-align: center; }
+#animate__element--main .animate_element--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  #animate__element--main .animate_element--wrapper .animate_element {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #animate__element--main .animate_element--wrapper .animate_element .marble--img {
+      padding-top: 60px !important; }
+    #animate__element--main .animate_element--wrapper .animate_element .three__d--img {
+      margin-bottom: 0;
+      height: 100%; }
+    #animate__element--main .animate_element--wrapper .animate_element .animate__bg--outer {
+      transform-style: preserve-3d;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #animate__element--main .animate_element--wrapper .animate_element .animate__bg--outer .animate_bg--inner {
+        transform: translateZ(90px);
+        height: 100px;
+        width: 100px; }
+#animate__element--main .sky--img {
+  background: url("../img/sky.jpg"); }
+  #animate__element--main .sky--img .animate_bg--inner {
+    background: url("../img/kb.png");
+    background-size: 100px 100px; }
+
+/*# sourceMappingURL=animate_element.css.map */

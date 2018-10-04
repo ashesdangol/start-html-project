@@ -1,0 +1,61 @@
+#animate__element--main{
+  .header--wrapper{
+    margin-bottom: 40px;
+    header{
+      text-align: center;
+      margin: 40px;
+    }
+    .header--description{
+      text-align: center;
+    }
+  }
+
+  .animate_element--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    // border: 1px solid #4C3C1B*1;
+    // overflow: hidden;
+    .animate_element{
+      width: 300px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .marble--img{
+        padding-top: 60px!important;
+      }
+      .three__d--img{
+        margin-bottom: 0;
+        height: 100%;
+      }
+      .animate__bg--outer{
+        transform-style: preserve-3d;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .animate_bg--inner{
+          transform: translateZ(90px);
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+    }
+  }
+
+  .sky--img{
+    background: url('../img/sky.jpg');
+    .animate_bg--inner{
+      background: url('../img/kb.png');
+      background-size: 100px 100px;
+
+    }
+
+  }
+
+}

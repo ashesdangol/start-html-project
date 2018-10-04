@@ -1,25 +1,25 @@
 /*
 Error: Undefined mixin 'prefix-transform'.
-        on line 48 of sass/assets.scss, in `prefix-transform'
-        from line 48 of sass/assets.scss, in `overlay-texts'
-        from line 53 of sass/assets.scss
+        on line 55 of sass/assets.scss, in `prefix-transform'
+        from line 55 of sass/assets.scss, in `overlay-texts'
+        from line 60 of sass/assets.scss
 
-43:       width: 80%;
-44:       opacity: 1;
-45:       bottom: 10%;
-46:       left: 50%;
-47:       z-index: 2;
-48:       @include prefix-transform(translateX(-50%));
-49:       @include prefix-transition(all 1s ease);
-50:     }
-51:   }
-52: }
-53: @include overlay-texts();
+50:       width: 80%;
+51:       opacity: 1;
+52:       bottom: 10%;
+53:       left: 50%;
+54:       z-index: 2;
+55:       @include prefix-transform(translateX(-50%));
+56:       @include prefix-transition(all 1s ease);
+57:     }
+58:   }
+59: }
+60: @include overlay-texts();
 
 Backtrace:
-sass/assets.scss:48:in `prefix-transform'
-sass/assets.scss:48:in `overlay-texts'
-sass/assets.scss:53
+sass/assets.scss:55:in `prefix-transform'
+sass/assets.scss:55:in `overlay-texts'
+sass/assets.scss:60
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
@@ -105,4 +105,4 @@ sass/assets.scss:53
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'prefix-transform'.\A         on line 48 of sass/assets.scss, in `prefix-transform'\A         from line 48 of sass/assets.scss, in `overlay-texts'\A         from line 53 of sass/assets.scss\A \A 43:       width: 80%;\A 44:       opacity: 1;\A 45:       bottom: 10%;\A 46:       left: 50%;\A 47:       z-index: 2;\A 48:       @include prefix-transform(translateX(-50%));\A 49:       @include prefix-transition(all 1s ease);\A 50:     }\A 51:   }\A 52: }\A 53: @include overlay-texts();"; }
+  content: "Error: Undefined mixin 'prefix-transform'.\A         on line 55 of sass/assets.scss, in `prefix-transform'\A         from line 55 of sass/assets.scss, in `overlay-texts'\A         from line 60 of sass/assets.scss\A \A 50:       width: 80%;\A 51:       opacity: 1;\A 52:       bottom: 10%;\A 53:       left: 50%;\A 54:       z-index: 2;\A 55:       @include prefix-transform(translateX(-50%));\A 56:       @include prefix-transition(all 1s ease);\A 57:     }\A 58:   }\A 59: }\A 60: @include overlay-texts();"; }
