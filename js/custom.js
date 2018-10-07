@@ -59,24 +59,27 @@ $(document).ready(function(){
     });
 
   }
+  function svg_onscroll(){
+    var $banner_height=$('#main_banner').height()-800,
+        $svg_height=$('.svg__height').height(),
+        $tot_height=$banner_height+$svg_height,
+        $doc=$(document).height(),
+        max=$doc-$tot_height,
+        $svg = $('svg').drawsvg();
+
+        $(window).on('scroll', function(){
+          console.log($banner_height +"bannerheight"+ $svg_height +"svgheight");
+          console.log($tot_height +"totalheight"+ max +"max");
+          var p= $(this).scrollTop()/ max;
+          console.log(p + "p");
+          $svg.drawsvg('progress', p);
+
+        });
+  }
   navigation();
   onScroll_hidemenu();
   banner_slider();
-  var $banner_height=$('#main_banner').height()-800,
-      $svg_height=$('.svg__height').height(),
-      $tot_height=$banner_height+$svg_height,
-      $doc=$(document).height(),
-      max=$doc-$tot_height,
-      $svg = $('svg').drawsvg();
-
-      $(window).on('scroll', function(){
-        console.log($banner_height +"bannerheight"+ $svg_height +"svgheight");
-        console.log($tot_height +"totalheight"+ max +"max");
-        var p= $(this).scrollTop()/ max;
-        console.log(p + "p");
-        $svg.drawsvg('progress', p);
-
-      });
+  svg_onscroll();
 
 
 
