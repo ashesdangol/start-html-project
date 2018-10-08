@@ -19,6 +19,7 @@
       }
     });
   </script>
+  <script src="plugins/threesixty.js"></script>
   <script src="plugins/drawsvg.js"></script>
   <script src="plugins/tilt.jquery.js"></script>
   <script src="slick/slick.min.js"></script>
