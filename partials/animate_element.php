@@ -40,6 +40,59 @@
           </div>
         </div>
       </div>
+      <!--three sixty view image rotation  -->
+      <div class="col-sm-6 col-md-4 col-xl-3">
+        <div class="animate_element--wrapper">
+          <div class="animate_element">
+            <div class="three__sxity--view">
+              <div class="rotation">
+                <img src="img/threesixtyimages/001.png" class="img_fluid">
+                <img src="img/threesixtyimages/002.png" class="img_fluid">
+                <img src="img/threesixtyimages/003.png" class="img_fluid">
+                <img src="img/threesixtyimages/004.png" class="img_fluid">
+                <img src="img/threesixtyimages/005.png" class="img_fluid">
+                <img src="img/threesixtyimages/006.png" class="img_fluid">
+                <img src="img/threesixtyimages/007.png" class="img_fluid">
+                <img src="img/threesixtyimages/008.png" class="img_fluid">
+                <img src="img/threesixtyimages/009.png" class="img_fluid">
+                <img src="img/threesixtyimages/010.png" class="img_fluid">
+                <img src="img/threesixtyimages/011.png" class="img_fluid">
+                <img src="img/threesixtyimages/012.png" class="img_fluid">
+              </div>
+              <figure class="threesixtyimage">
+                <img src="img/360.svg" class="img-responsive" alt="360 view">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- 3D animated buttons -->
+      <div class="col-sm-6 col-md-4 col-xl-3">
+        <div class="animate_element--wrapper">
+          <div class="animate_element">
+            <div class="threed--btnOne">
+              <a href="https://www.facebook.com/featherwebs/" class="social-container facebook--threed">
+                <div class="social-cube">
+                  <div class="front">
+                    Facebook
+                  </div>
+                  <div class="bottom">
+                    featherwebs
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="threed--btnTwo">
+              <a href="#" class="btn animated-button gibson-one">Sign up</a>
+              <a href="#" class="btn btn-sm animated-button thar-three">Register</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
       <!--cube 3d  -->
       <div class="col-sm-6 col-md-4 col-xl-3">
         <div class="animate_element--wrapper">
@@ -70,14 +123,12 @@
                   <p>bottom</p>
 
                 </div>
-
               </div>
 
             </div>
           </div>
         </div>
       </div>
-
       <!--Envelop animate on scroll  -->
       <div class="col-sm-6 col-md-4 col-xl-3 svg__height">
         <div class="animate_element--wrapper svg__bg">
@@ -99,7 +150,6 @@
           </div>
         </div>
       </div>
-
       <!--Svg roti-ping/ferry's wheel anmation  -->
       <div class="col-sm-6 col-md-4 col-xl-3">
         <div class="animate_element--wrapper">
@@ -678,45 +728,6 @@
               </svg>
 
             </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!--three sixty view image rotation  -->
-      <div class="col-sm-6 col-md-4 col-xl-3">
-        <div class="animate_element--wrapper">
-          <div class="animate_element">
-            <div class="three__sxity--view">
-              <div class="rotation">
-                <img src="img/threesixtyimages/001.png" class="img_fluid">
-                <img src="img/threesixtyimages/002.png" class="img_fluid">
-                <img src="img/threesixtyimages/003.png" class="img_fluid">
-                <img src="img/threesixtyimages/004.png" class="img_fluid">
-                <img src="img/threesixtyimages/005.png" class="img_fluid">
-                <img src="img/threesixtyimages/006.png" class="img_fluid">
-                <img src="img/threesixtyimages/007.png" class="img_fluid">
-                <img src="img/threesixtyimages/008.png" class="img_fluid">
-                <img src="img/threesixtyimages/009.png" class="img_fluid">
-                <img src="img/threesixtyimages/010.png" class="img_fluid">
-                <img src="img/threesixtyimages/011.png" class="img_fluid">
-                <img src="img/threesixtyimages/012.png" class="img_fluid">
-              </div>
-              <figure class="threesixtyimage">
-                <img src="img/360.svg" class="img-responsive" alt="360 view">
-              </figure>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-      <div class="col-sm-6 col-md-4 col-xl-3">
-        <div class="animate_element--wrapper">
-          <div class="animate_element">
-            <figure class="three__d--img">
-              <!-- <img src="img/marblewala.png" class="img-fluid" alt="marble" data-tilt data-tilt-scale="1.1" data-tilt-axis="x" > -->
-            </figure>
           </div>
         </div>
 

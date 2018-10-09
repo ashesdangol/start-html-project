@@ -61,12 +61,12 @@ $(document).ready(function(){
   }
   function svg_onscroll(){
     // var $banner_height=$('#main_banner').height()-800,
-    var $banner_height=$('#main_banner').height(),
+    var $banner_height=$('#main_banner').height()-200,
         $svg_height=$('.svg__height').height(),
         $tot_height=$banner_height+$svg_height,
         $doc=$(document).height(),
         max=$doc-$tot_height,
-        $svg = $('#svg_envelop').drawsvg();
+        $svg = $('svg').drawsvg();
 
         $(window).on('scroll', function(){
           // console.log($banner_height +"bannerheight"+ $svg_height +"svgheight");

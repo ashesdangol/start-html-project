@@ -1,39 +1,28 @@
 /*
 Error: Undefined mixin 'prefix-transform'.
-        on line 82 of sass/animate_element.scss, in `prefix-transform'
-        from line 82 of sass/animate_element.scss
+        on line 89 of sass/animate_element.scss, in `prefix-transform'
+        from line 89 of sass/animate_element.scss
 
-77:         align-items: center;
-78:         opacity: 0.8;
-79: 
-80:         // border: 5px solid black;
-81:         &.front__cube--face{
-82:           @include prefix-transform(translateZ(90px));
-83:           background: red;
-84:         }
-85:         &.back__cube--face{
-86:           @include prefix-transform(rotateY(180deg) translateZ(90px));
-87:           background: yellow;
+84:         p{
+85:           color: white;
+86:         }
+87:       }
+88:       .front__cube--face{
+89:         @include prefix-transform(translateZ(90px));
+90:         background: rgba(0,0,0,0.9);
+91:       }
+92:       .back__cube--face{
+93:         @include prefix-transform(rotateY(180deg) translateZ(90px));
+94:           background: rgba(0,0,0,0.9);
 
 Backtrace:
-sass/animate_element.scss:82:in `prefix-transform'
-sass/animate_element.scss:82
+sass/animate_element.scss:89:in `prefix-transform'
+sass/animate_element.scss:89
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Users/ashes/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -119,4 +108,4 @@ sass/animate_element.scss:82
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'prefix-transform'.\A         on line 82 of sass/animate_element.scss, in `prefix-transform'\A         from line 82 of sass/animate_element.scss\A \A 77:         align-items: center;\A 78:         opacity: 0.8;\A 79: \A 80:         // border: 5px solid black;\A 81:         &.front__cube--face{\A 82:           @include prefix-transform(translateZ(90px));\A 83:           background: red;\A 84:         }\A 85:         &.back__cube--face{\A 86:           @include prefix-transform(rotateY(180deg) translateZ(90px));\A 87:           background: yellow;"; }
+  content: "Error: Undefined mixin 'prefix-transform'.\A         on line 89 of sass/animate_element.scss, in `prefix-transform'\A         from line 89 of sass/animate_element.scss\A \A 84:         p{\A 85:           color: white;\A 86:         }\A 87:       }\A 88:       .front__cube--face{\A 89:         @include prefix-transform(translateZ(90px));\A 90:         background: rgba(0,0,0,0.9);\A 91:       }\A 92:       .back__cube--face{\A 93:         @include prefix-transform(rotateY(180deg) translateZ(90px));\A 94:           background: rgba(0,0,0,0.9);"; }

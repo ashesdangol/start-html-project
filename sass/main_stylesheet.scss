@@ -16,10 +16,10 @@
           transform: $x; /* IE 10, Fx 16+, Op 12.1+ */
 }
 @mixin prefix-transition($x) {
-  transition: $x;
   -webkit-transition: $x;
   -moz-transition: $x;
   -o-transition: $x;
+  transition: $x;
 
 }
 @mixin prefix-origin($x) {
